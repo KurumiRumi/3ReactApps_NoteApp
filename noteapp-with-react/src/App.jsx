@@ -14,7 +14,7 @@ function App() {
     const newNote = {
       id: uuid(),
       title: "NewNote",
-      content: "content",
+      content: "",
       modDate: Date.now(),
     };
     setNotes([...notes, newNote]);

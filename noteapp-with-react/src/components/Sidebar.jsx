@@ -7,6 +7,7 @@ const Sidebar = ({
   activeNote,
   setActiveNote,
 }) => {
+  // 日付の降順
   const sortedNotes = notes.sort((a, b) => b.modDate - a.modDate);
 
   return (

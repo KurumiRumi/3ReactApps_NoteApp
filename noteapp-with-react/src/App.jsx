@@ -16,6 +16,11 @@ function App() {
     localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
 
+  useEffect(() => {
+    // 初回起動時1つ目のデータを選択する
+    setActiveNote(notes[0].id);
+  }, []);
+
   const onAddNote = () => {
     console.log("追加されました");
     const newNote = {
